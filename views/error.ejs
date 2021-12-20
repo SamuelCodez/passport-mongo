@@ -1,0 +1,19 @@
+<%- include('head', {title: 'Error'}) -%>
+<style>
+  body {
+    font-family: consolas;
+  }
+  .err-message {
+    padding-bottom: 20px;
+  }
+  .err.stats {
+    padding-bottom: 20px;
+  }
+</style>
+<span class="err-message"><%- message %></span>
+<br />
+<span class="err-stats"><%- error.status %></span>
+<br />
+<p class="err-stack"><%- error.stack %></p>
+
+<%- include('foot') -%>
